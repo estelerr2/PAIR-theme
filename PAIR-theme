@@ -1,0 +1,66 @@
+/*
+    Custom Sigma-9 Theme: Forest PAIR
+    Dominasi Putih dengan Aksen Hijau Hutan
+*/
+
+@import url("https://scp-wiki.wdfiles.com/local--code/theme:sigma/1");
+
+:root {
+    /* Variabel Warna */
+    --forest-green: #223c28; /* Hijau Hutan Gelap */
+    --pale-forest: #f2f5f2;  /* Hijau sangat samar untuk background */
+    --white: #ffffff;
+}
+
+/* 1. Background Utama */
+body {
+    background-color: var(--pale-forest);
+    background-image: none;
+}
+
+/* 2. Header & Logo */
+#header {
+    background-image: url("https://p7.itc.cn/images01/20210515/3472719a2f60447387679883582490b4.png"); /* Ganti dengan URL logo PAIR Anda setelah diupload */
+    background-repeat: no-repeat;
+    background-position: left 10px top 10px;
+    background-size: 80px; /* Sesuaikan ukuran logo */
+    background-color: var(--white);
+}
+
+#header h1 a::before {
+    content: "PAIR"; /* Nama organisasi Anda */
+    color: var(--forest-green);
+}
+
+/* 3. Top Bar (Menu Atas) */
+#top-bar {
+    background: rgba(34, 60, 40, 0.05); /* Hijau hutan sangat samar */
+    border-bottom: 2px solid var(--forest-green);
+}
+
+#top-bar ul li a {
+    color: var(--forest-green);
+}
+
+/* 4. Side Bar (Menu Samping) */
+#side-bar {
+    background-color: rgba(34, 60, 40, 0.02); /* Lebih putih, hanya sedikit tint hijau */
+    border-right: 1px solid rgba(34, 60, 40, 0.1);
+}
+
+#side-bar .side-block {
+    background: var(--white);
+    border: 1px solid rgba(34, 60, 40, 0.1);
+    box-shadow: none;
+}
+
+#side-bar .heading {
+    color: var(--forest-green);
+    border-bottom: 2px solid var(--forest-green);
+}
+
+/* 5. Perbaikan Konten Agar Tetap Putih Bersih */
+#main-content {
+    background-color: var(--white);
+    border: 1px solid #ddd;
+}
